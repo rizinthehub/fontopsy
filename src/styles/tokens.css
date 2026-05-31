@@ -1,0 +1,51 @@
+:root {
+  /* ─── Backgrounds (base layer up) ─── */
+  --color-bg-base:        #0A0B0D;
+  --color-bg-elevated:    #111317;
+  --color-bg-overlay:     #16191F;
+  --color-bg-sunken:      #06070A;
+
+  /* ─── Surfaces & Borders ─── */
+  --color-surface:        #1A1D24;
+  --color-surface-hover:  #20242C;
+  --color-border-subtle:  #1F232B;
+  --color-border-default: #2A2F38;
+  --color-border-strong:  #3A4150;
+
+  /* ─── Text ─── */
+  --color-text-primary:   #F5F7FA;
+  --color-text-secondary: #A8B0BD;
+  --color-text-tertiary:  #6B7280;
+  --color-text-disabled:  #4A5160;
+  --color-text-inverse:   #0A0B0D;
+
+  /* ─── Accent (electric mint) ─── */
+  --color-accent:         #5EEAD4;
+  --color-accent-hover:   #4AD9C2;
+  --color-accent-pressed: #3AC4AD;
+  --color-accent-muted:   #5EEAD41A;
+  --color-accent-glow:    #5EEAD440;
+
+  /* ─── Anatomy Diagram Colors ─── */
+  --color-anatomy-baseline:   #5EEAD4;
+  --color-anatomy-xheight:    #F472B6;
+  --color-anatomy-capheight:  #FBBF24;
+  --color-anatomy-ascender:   #60A5FA;
+  --color-anatomy-descender:  #A78BFA;
+  --color-anatomy-bbox:       #F5F7FA33;
+
+  /* ─── Semantic ─── */
+  --color-success:        #34D399;
+  --color-success-bg:     #34D3991A;
+  --color-warning:        #FBBF24;
+  --color-warning-bg:     #FBBF241A;
+  --color-error:          #F87171;
+  --color-error-bg:       #F871711A;
+  --color-info:           #60A5FA;
+  --color-info-bg:        #60A5FA1A;
+
+  /* ─── Confidence Badge ─── */
+  --color-conf-high:      #34D399;
+  --color-conf-medium:    #FBBF24;
+  --color-conf-low:       #F87171;
+}

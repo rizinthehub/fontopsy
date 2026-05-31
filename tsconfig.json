@@ -18,6 +18,9 @@
     "incremental": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": true,
+    "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"]
     }
