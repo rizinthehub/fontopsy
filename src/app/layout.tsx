@@ -18,13 +18,25 @@ const jetbrainsMono = localFont({
 
 export const metadata: Metadata = {
   title: 'Fontopsy — Identify Any Font',
-  description: 'Drop a screenshot. We\'ll do the autopsy — anatomy, alternatives, and pairings in under five seconds.',
+  description:
+    'Drop a screenshot. We\'ll do the autopsy — anatomy, alternatives, and pairings in under five seconds.',
+  openGraph: {
+    title: 'Fontopsy — Identify Any Font',
+    description: 'Font identification, anatomy overlay, free alternatives, and pairings.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-bg-base text-text-primary antialiased">{children}</body>
+      <body className="font-sans antialiased bg-bg-base text-text-primary">
+        {children}
+      </body>
     </html>
   );
 }

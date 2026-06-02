@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="24" viewBox="0 0 140 24" fill="none">
+  <!-- Logo mark (the crosshair O) — scaled to 24px tall -->
+  <circle cx="12" cy="12" r="8.25" stroke="#5EEAD4" stroke-width="1.25"/>
+  <line x1="3" y1="12" x2="21" y2="12" stroke="#5EEAD4" stroke-width="0.85" stroke-linecap="round"/>
+  <line x1="12" y1="3" x2="12" y2="21" stroke="#5EEAD4" stroke-width="0.85" stroke-linecap="round"/>
+  <circle cx="12" cy="12" r="1.1" fill="#5EEAD4"/>
+  <!-- Wordmark: "F" -->
+  <text x="30" y="17" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#F5F7FA" letter-spacing="-0.3">F</text>
+  <!-- Wordmark: "ontopsy" — the "o" replaced by the mark above, so we skip it and write the rest -->
+  <text x="40" y="17" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#F5F7FA" letter-spacing="-0.3">nt</text>
+  <!-- The "o" gap is covered by the mark; we continue after -->
+  <text x="68" y="17" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#F5F7FA" letter-spacing="-0.3">psy</text>
+</svg>
