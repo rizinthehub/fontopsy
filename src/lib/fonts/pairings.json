@@ -1,0 +1,117 @@
+{
+  "v": 1,
+  "pairings": {
+    "Inter": [
+      { "displayFamily": "Inter", "bodyFamily": "Lora", "tone": "modern", "rationale": "Inter's geometric neutrality paired with Lora's warm curves creates a balanced editorial system." },
+      { "displayFamily": "Inter", "bodyFamily": "Merriweather", "tone": "editorial", "rationale": "A go-to pairing for digital publishing — clean sans headlines with a highly readable serif body." }
+    ],
+    "Playfair Display": [
+      { "displayFamily": "Playfair Display", "bodyFamily": "Source Serif 4", "tone": "editorial", "rationale": "High-contrast serif headlines anchored by a humanist serif for readable body copy." },
+      { "displayFamily": "Playfair Display", "bodyFamily": "Lora", "tone": "classic", "rationale": "Two literary serifs in conversation — Lora's softer curves balance Playfair's drama." }
+    ],
+    "Montserrat": [
+      { "displayFamily": "Montserrat", "bodyFamily": "Merriweather", "tone": "modern", "rationale": "Geometric sans headlines contrast beautifully with Merriweather's sturdy serif body." },
+      { "displayFamily": "Montserrat", "bodyFamily": "Source Serif 4", "tone": "editorial", "rationale": "A popular pairing for professional publications and brand identities." }
+    ],
+    "Roboto": [
+      { "displayFamily": "Roboto", "bodyFamily": "Lora", "tone": "modern", "rationale": "Roboto's mechanical precision softened by Lora's calligraphic warmth." },
+      { "displayFamily": "Roboto", "bodyFamily": "Merriweather", "tone": "editorial", "rationale": "Google's own pairing philosophy — humanist sans meets sturdy reading serif." }
+    ],
+    "Lato": [
+      { "displayFamily": "Lato", "bodyFamily": "Merriweather", "tone": "editorial", "rationale": "Lato's semi-rounded character works harmoniously with Merriweather's warmth." },
+      { "displayFamily": "Lato", "bodyFamily": "Source Serif 4", "tone": "modern", "rationale": "A clean pairing for corporate and editorial contexts alike." }
+    ],
+    "Poppins": [
+      { "displayFamily": "Poppins", "bodyFamily": "Lora", "tone": "playful", "rationale": "Poppins' rounded geometric forms paired with Lora's calligraphic elegance." },
+      { "displayFamily": "Poppins", "bodyFamily": "Source Serif 4", "tone": "modern", "rationale": "A fresh take on the geometric-sans-plus-serif pairing." }
+    ],
+    "Oswald": [
+      { "displayFamily": "Oswald", "bodyFamily": "Lora", "tone": "editorial", "rationale": "Oswald's condensed impact headlines pair naturally with Lora's warm reading comfort." },
+      { "displayFamily": "Oswald", "bodyFamily": "Merriweather", "tone": "classic", "rationale": "A strong display-to-body contrast for news and editorial layouts." }
+    ],
+    "Merriweather": [
+      { "displayFamily": "Playfair Display", "bodyFamily": "Merriweather", "tone": "classic", "rationale": "Elegant display with a dependable reading serif." },
+      { "displayFamily": "Oswald", "bodyFamily": "Merriweather", "tone": "editorial", "rationale": "High contrast between condensed display and open body type." }
+    ],
+    "Lora": [
+      { "displayFamily": "Lora", "bodyFamily": "Source Serif 4", "tone": "editorial", "rationale": "Two serifs with different personalities creating a refined typographic system." },
+      { "displayFamily": "Playfair Display", "bodyFamily": "Lora", "tone": "classic", "rationale": "Drama at the headline, comfort in the body." }
+    ],
+    "Raleway": [
+      { "displayFamily": "Raleway", "bodyFamily": "Lora", "tone": "modern", "rationale": "Raleway's elegant geometry above Lora's warm serif body creates refined hierarchy." },
+      { "displayFamily": "Raleway", "bodyFamily": "Merriweather", "tone": "editorial", "rationale": "A popular pairing for fashion and lifestyle brands." }
+    ],
+    "Open Sans": [
+      { "displayFamily": "Open Sans", "bodyFamily": "Lora", "tone": "modern", "rationale": "Open Sans's neutral clarity pairs with Lora's warmth for approachable editorial design." },
+      { "displayFamily": "Open Sans", "bodyFamily": "Merriweather", "tone": "editorial", "rationale": "A trusted workhorse pairing for content-heavy sites." }
+    ],
+    "Nunito": [
+      { "displayFamily": "Nunito", "bodyFamily": "Lora", "tone": "playful", "rationale": "Nunito's rounded friendliness paired with Lora's literary warmth." },
+      { "displayFamily": "Nunito", "bodyFamily": "Source Serif 4", "tone": "modern", "rationale": "Approachable and readable across app and editorial contexts." }
+    ],
+    "Bebas Neue": [
+      { "displayFamily": "Bebas Neue", "bodyFamily": "Lora", "tone": "editorial", "rationale": "Bold all-caps display paired with a refined reading serif." },
+      { "displayFamily": "Bebas Neue", "bodyFamily": "Source Serif 4", "tone": "modern", "rationale": "Strong typographic contrast between heavy condensed display and open serif body." }
+    ],
+    "Source Sans 3": [
+      { "displayFamily": "Source Sans 3", "bodyFamily": "Source Serif 4", "tone": "editorial", "rationale": "The Source superfamily pairing — designed to work together by Adobe." },
+      { "displayFamily": "Source Sans 3", "bodyFamily": "Lora", "tone": "modern", "rationale": "A clean workhorse sans with a warm calligraphic serif." }
+    ],
+    "Work Sans": [
+      { "displayFamily": "Work Sans", "bodyFamily": "Lora", "tone": "modern", "rationale": "Work Sans's optical precision pairs with Lora's warmth for professional layouts." },
+      { "displayFamily": "Work Sans", "bodyFamily": "Merriweather", "tone": "editorial", "rationale": "A reliable pairing for SaaS and tech editorial work." }
+    ],
+    "DM Sans": [
+      { "displayFamily": "DM Sans", "bodyFamily": "Lora", "tone": "modern", "rationale": "DM Sans's low-contrast geometry complements Lora's calligraphic serif details." },
+      { "displayFamily": "DM Sans", "bodyFamily": "Source Serif 4", "tone": "editorial", "rationale": "A refined system for product and editorial design." }
+    ],
+    "Space Grotesk": [
+      { "displayFamily": "Space Grotesk", "bodyFamily": "Source Serif 4", "tone": "modern", "rationale": "Space Grotesk's quirky geometry anchored by Source Serif's reliable readability." },
+      { "displayFamily": "Space Grotesk", "bodyFamily": "Lora", "tone": "editorial", "rationale": "Tech-forward display paired with literary body type." }
+    ],
+    "Cormorant Garamond": [
+      { "displayFamily": "Cormorant Garamond", "bodyFamily": "Source Sans 3", "tone": "editorial", "rationale": "High-contrast old-style serif headlines with a clean humanist sans body." },
+      { "displayFamily": "Cormorant Garamond", "bodyFamily": "Lora", "tone": "classic", "rationale": "Two serifs in elegant dialogue for luxury and literary contexts." }
+    ],
+    "EB Garamond": [
+      { "displayFamily": "EB Garamond", "bodyFamily": "Source Sans 3", "tone": "classic", "rationale": "A timeless old-style serif heading over a clean modern sans." },
+      { "displayFamily": "EB Garamond", "bodyFamily": "Lora", "tone": "editorial", "rationale": "Two humanist serifs for a refined literary feel." }
+    ],
+    "Abril Fatface": [
+      { "displayFamily": "Abril Fatface", "bodyFamily": "Lora", "tone": "editorial", "rationale": "Dramatic fatface display with a warm serif body for magazine layouts." },
+      { "displayFamily": "Abril Fatface", "bodyFamily": "Source Serif 4", "tone": "classic", "rationale": "High contrast poster headline paired with a readable editorial serif." }
+    ],
+    "Dancing Script": [
+      { "displayFamily": "Dancing Script", "bodyFamily": "Lato", "tone": "playful", "rationale": "Script display with a neutral sans body keeps the layout readable and friendly." },
+      { "displayFamily": "Dancing Script", "bodyFamily": "Nunito", "tone": "playful", "rationale": "Two rounded, friendly typefaces for warm and approachable designs." }
+    ],
+    "Josefin Sans": [
+      { "displayFamily": "Josefin Sans", "bodyFamily": "Lora", "tone": "modern", "rationale": "Josefin's geometric elegance above Lora's warm calligraphic serif." },
+      { "displayFamily": "Josefin Sans", "bodyFamily": "Source Serif 4", "tone": "editorial", "rationale": "A chic pairing for fashion and editorial projects." }
+    ],
+    "Spectral": [
+      { "displayFamily": "Spectral", "bodyFamily": "Source Sans 3", "tone": "editorial", "rationale": "Spectral's refined serif headlines with a neutral sans body for digital reading." },
+      { "displayFamily": "Spectral", "bodyFamily": "Inter", "tone": "modern", "rationale": "Elegant display serif over a clean UI sans for product editorial." }
+    ],
+    "Fraunces": [
+      { "displayFamily": "Fraunces", "bodyFamily": "Source Sans 3", "tone": "editorial", "rationale": "Fraunces's expressive old-style headlines with a clean sans for contrast." },
+      { "displayFamily": "Fraunces", "bodyFamily": "Lora", "tone": "classic", "rationale": "Two serifs with strong personalities for literary and brand contexts." }
+    ],
+    "Syne": [
+      { "displayFamily": "Syne", "bodyFamily": "Source Serif 4", "tone": "modern", "rationale": "Syne's experimental geometry grounded by Source Serif's reliable readability." },
+      { "displayFamily": "Syne", "bodyFamily": "Lora", "tone": "editorial", "rationale": "A contemporary pairing for creative agencies and design studios." }
+    ],
+    "Unbounded": [
+      { "displayFamily": "Unbounded", "bodyFamily": "Inter", "tone": "modern", "rationale": "Unbounded's wide geometric forms paired with Inter's neutral versatility." },
+      { "displayFamily": "Unbounded", "bodyFamily": "Source Serif 4", "tone": "editorial", "rationale": "Bold display geometry meets refined serif for editorial contrast." }
+    ],
+    "JetBrains Mono": [
+      { "displayFamily": "JetBrains Mono", "bodyFamily": "Inter", "tone": "modern", "rationale": "A developer-native pairing — monospace code display with a clean UI sans." },
+      { "displayFamily": "JetBrains Mono", "bodyFamily": "Source Sans 3", "tone": "editorial", "rationale": "Technical precision paired with a humanist sans for documentation." }
+    ],
+    "Fira Code": [
+      { "displayFamily": "Fira Code", "bodyFamily": "Source Sans 3", "tone": "modern", "rationale": "Fira Code's programming ligatures over a humanist sans for technical writing." },
+      { "displayFamily": "Fira Code", "bodyFamily": "Inter", "tone": "modern", "rationale": "A clean developer pairing for code-centric interfaces." }
+    ]
+  }
+}
