@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { FontPreview } from './FontPreview';
 import { PairingLabel } from './PairingLabel';
 import { Divider } from '@/components/ui/Divider';
@@ -7,15 +8,12 @@ interface PairingCardProps {
   pairing: PairingSuggestion;
 }
 
-export function PairingCard({ pairing }: PairingCardProps) {
+export const PairingCard = memo(function PairingCard({ pairing }: PairingCardProps) {
   return (
     <div className="bg-bg-elevated border border-border rounded-lg p-6 flex flex-col gap-0">
-      {/* Tone label */}
       <div className="mb-4">
         <PairingLabel tone={pairing.tone} />
       </div>
-
-      {/* Display font preview */}
       <div className="bg-bg-sunken rounded-md px-4 py-5">
         <FontPreview
           family={pairing.display.family}
@@ -25,10 +23,7 @@ export function PairingCard({ pairing }: PairingCardProps) {
           minHeight={56}
         />
       </div>
-
       <Divider className="my-4" />
-
-      {/* Body font preview */}
       <div className="bg-bg-sunken rounded-md px-4 py-4">
         <FontPreview
           family={pairing.body.family}
@@ -38,8 +33,6 @@ export function PairingCard({ pairing }: PairingCardProps) {
           minHeight={48}
         />
       </div>
-
-      {/* Attribution */}
       <div className="mt-4 space-y-1">
         <p className="font-mono text-[10px] text-text-tertiary uppercase tracking-widest">
           Display: {pairing.display.family}
@@ -55,4 +48,4 @@ export function PairingCard({ pairing }: PairingCardProps) {
       </div>
     </div>
   );
-}
+});

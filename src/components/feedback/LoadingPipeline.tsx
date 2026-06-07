@@ -45,7 +45,7 @@ export function LoadingPipeline({ stage: externalStage }: LoadingPipelineProps) 
     <div
       role="status"
       aria-live="polite"
-      aria-label={`Analyzing image, stage ${currentIndex + 1} of 4: ${stage}`}
+      aria-label={`Analyzing image. Current stage: ${stage}, ${currentIndex + 1} of 4`}
       className="flex flex-col items-center justify-center gap-10 py-12 px-6 max-w-lg mx-auto"
     >
       <h2 className="text-xl font-semibold text-text-primary text-center">

@@ -81,7 +81,16 @@ export function UploadZone() {
 
   return (
     <div
-      {...getRootProps()}
+            {...getRootProps()}
+      role="button"
+      tabIndex={0}
+      aria-label="Upload image — drag, drop, paste, or click to browse"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleBrowse();
+        }
+      }}
       className={cn(
         'relative w-full min-h-[320px] md:min-h-[320px] rounded-lg border-2 border-dashed transition-all duration-150',
         'bg-bg-elevated',

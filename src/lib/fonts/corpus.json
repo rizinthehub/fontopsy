@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-06-04T00:00:00.000Z",
-  "count": 200,
+  "count": 149,
   "fonts": [
     {"family":"Inter","category":"sans-serif","designer":"Rasmus Andersson","license":"OFL","licenseUrl":"https://openfontlicense.org","weights":[100,200,300,400,500,600,700,800,900],"variable":true,"subsets":["latin","latin-ext"],"metrics":{"xHeightRatio":0.527,"capHeightRatio":0.727,"ascenderRatio":0.960,"descenderRatio":0.240,"strokeContrast":1.1},"traits":["humanist","low-contrast"],"cssUrl":"https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"},
     {"family":"Roboto","category":"sans-serif","designer":"Christian Robertson","license":"Apache-2.0","licenseUrl":"https://www.apache.org/licenses/LICENSE-2.0","weights":[100,300,400,500,700,900],"variable":false,"subsets":["latin","latin-ext"],"metrics":{"xHeightRatio":0.528,"capHeightRatio":0.710,"ascenderRatio":0.928,"descenderRatio":0.244,"strokeContrast":1.2},"traits":["humanist","low-contrast"],"cssUrl":"https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"},

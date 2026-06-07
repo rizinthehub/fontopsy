@@ -18,7 +18,13 @@ const jetbrainsMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Fontopsy — Identify Any Font',
+  metadataBase: new URL(
+    process.env['NEXT_PUBLIC_APP_URL'] ?? 'http://localhost:3000',
+  ),
+  title: {
+    default: 'Fontopsy — Identify Any Font',
+    template: '%s — Fontopsy',
+  },
   description:
     "Drop a screenshot. We'll do the autopsy — anatomy, alternatives, and pairings in under five seconds.",
   openGraph: {

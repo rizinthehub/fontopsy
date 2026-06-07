@@ -30,17 +30,13 @@ export function ResultsView({ id }: ResultsViewProps) {
   const router = useRouter();
   const { mutate: analyze, status: analyzeStatus } = useAnalyze();
 
-  // Core result state
   const [result, setResultState] = useState<AnalysisResult | null>(null);
   const [notFound, setNotFound] = useState(false);
-
-  // UI state
   const [testerText, setTesterText] = useState('');
   const [fontSize, setFontSize] = useState(TYPE_TESTER_DEFAULT_SIZE);
   const [overlayOn, setOverlayOn] = useState(true);
   const [activeTerm, setActiveTerm] = useState<AnatomyTerm | undefined>(undefined);
 
-  // Load result on mount
   useEffect(() => {
     let found = getResult(id);
     if (!found) {
@@ -67,7 +63,6 @@ export function ResultsView({ id }: ResultsViewProps) {
     if (term) setActiveTerm(term);
   }, []);
 
-  // Manual text re-analysis
   const handleManualSubmit = useCallback(
     async (text: string) => {
       if (!result) return;
@@ -122,8 +117,8 @@ export function ResultsView({ id }: ResultsViewProps) {
     );
   }
 
-  // ── Re-analyzing (manual text) ─────────────────────────────────────────────
-  if (analyzeStatus === 'pending') {
+  // ── Re-analyzing ───────────────────────────────────────────────────────────
+  if (analyzeStatus === ('pending' as string)) {
     return (
       <PageShell>
         <div className="flex items-center justify-center min-h-[60vh]">
@@ -133,7 +128,7 @@ export function ResultsView({ id }: ResultsViewProps) {
     );
   }
 
-  // ── No text found (NO_TEXT_FOUND result path) ──────────────────────────────
+  // ── No text found ──────────────────────────────────────────────────────────
   const noTextFound = !result.text || result.text.trim() === '';
   if (noTextFound) {
     return (
@@ -156,21 +151,28 @@ export function ResultsView({ id }: ResultsViewProps) {
   // ── Full results ───────────────────────────────────────────────────────────
   return (
     <PageShell>
-      <div className="py-8 space-y-12 pb-24 md:pb-12">
+      <div className="py-8 pb-24 md:pb-12">
         {/* Header */}
-        <ResultHeader score={result.identified.score} />
+        <div className="mb-8">
+          <ResultHeader score={result.identified.score} />
+        </div>
 
         {/* Identified font */}
-        <IdentifiedFontCard
-          match={result.identified}
-          text={testerText}
-          fontSize={fontSize}
-          overlayOn={overlayOn}
-          onToggleOverlay={handleToggleOverlay}
-          {...(activeTerm ? { activeTerm } : {})}
-          onTermClick={handleTermClick}
-          onHoverTerm={handleHoverTerm}
-        />
+        <div
+          className="mb-12"
+          style={{ animation: 'slideUp 400ms cubic-bezier(0.16,1,0.3,1) both' }}
+        >
+          <IdentifiedFontCard
+            match={result.identified}
+            text={testerText}
+            fontSize={fontSize}
+            overlayOn={overlayOn}
+            onToggleOverlay={handleToggleOverlay}
+            {...(activeTerm ? { activeTerm } : {})}
+            onTermClick={handleTermClick}
+            onHoverTerm={handleHoverTerm}
+          />
+        </div>
 
         {/* Type tester */}
         <TypeTester
@@ -181,18 +183,43 @@ export function ResultsView({ id }: ResultsViewProps) {
         />
 
         {/* Alternatives */}
-        <AlternativesStrip
-          alternatives={result.alternatives}
-          text={testerText}
-          size={fontSize}
-        />
+        <div
+          className="mt-12"
+          style={{ animation: 'slideUp 400ms cubic-bezier(0.16,1,0.3,1) 80ms both' }}
+        >
+          <AlternativesStrip
+            alternatives={result.alternatives}
+            text={testerText}
+            size={fontSize}
+          />
+        </div>
 
         {/* Pairings */}
-        <PairingSection pairings={result.pairings} />
+        <div
+          className="mt-12"
+          style={{ animation: 'slideUp 400ms cubic-bezier(0.16,1,0.3,1) 160ms both' }}
+        >
+          <PairingSection pairings={result.pairings} />
+        </div>
 
         {/* Share bar */}
-        <ShareBar result={result} />
+        <div className="mt-12">
+          <ShareBar result={result} />
+        </div>
       </div>
+
+      <style>{`
+        @keyframes slideUp {
+          from { opacity: 0; transform: translateY(16px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          @keyframes slideUp {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+          }
+        }
+      `}</style>
     </PageShell>
   );
 }
