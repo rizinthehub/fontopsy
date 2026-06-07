@@ -1,7 +1,4 @@
 {
-  "crons": [
-    { "path": "/api/health", "schedule": "*/5 * * * *" }
-  ],
   "functions": {
     "src/app/api/analyze/route.ts": { "maxDuration": 10 }
   },
