@@ -39,23 +39,23 @@ export function useUploadFlow() {
     onUploadProgress: (p) => {
       setState((s) => ({ ...s, progress: p }));
     },
-    onClientUploadComplete: (res) => {
-      const file = res?.[0];
-      if (!file) {
-        setState((s) => ({
-          ...s,
-          status: 'error',
-          error: 'Upload completed but no file returned.',
-        }));
-        return;
-      }
+      onClientUploadComplete: (res) => {
+    const file = res?.[0];
+    if (!file) {
       setState((s) => ({
         ...s,
-        status: 'ready',
-        progress: 100,
-        upload: { url: file.url, key: file.key },
+        status: 'error',
+        error: 'Upload completed but no file returned.',
       }));
-    },
+      return;
+    }
+    setState((s) => ({
+      ...s,
+      status: 'ready',
+      progress: 100,
+      upload: { url: file.ufsUrl, key: file.key },
+    }));
+  },
     onUploadError: (err) => {
       setState((s) => ({
         ...s,
