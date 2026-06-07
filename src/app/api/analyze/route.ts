@@ -27,7 +27,14 @@ export async function POST(req: NextRequest) {
     const imageBuffer = await fetchImageBytes(body.imageUrl);
 
     // OCR
-    const vision = await detectText(imageBuffer, body.region);
+        // OCR
+    let vision;
+    try {
+      vision = await detectText(imageBuffer, body.region);
+    } catch (visionErr) {
+      console.error('[Vision Error]', JSON.stringify(visionErr, Object.getOwnPropertyNames(visionErr as object)));
+      throw visionErr;
+    }
 
     // Determine text to match against
     const text = (body.manualText ?? vision.fullText).trim();
