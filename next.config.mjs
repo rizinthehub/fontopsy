@@ -45,7 +45,7 @@ const nextConfig = {
               "default-src 'self'",
               "img-src 'self' https://utfs.io data: blob:",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "font-src 'self' https://fonts.gstatic.com",
+              "font-src 'self' https://fonts.gstatic.com data:",
               "connect-src 'self' https://*.ingest.uploadthing.com https://uploadthing.com https://fonts.googleapis.com https://api.uploadthing.com",
               "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com",
               "frame-ancestors 'none'",
