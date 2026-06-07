@@ -20,6 +20,6 @@ export const ShortIdSchema = z.string().regex(/^[A-Za-z0-9_-]{10}$/);
 export const UploadthingUrlSchema = z
   .string()
   .regex(
-    /^https:\/\/utfs\.io\/f\/[A-Za-z0-9._-]+$/,
-    'Must be a valid uploadthing URL (https://utfs.io/f/...)',
+    /^https:\/\/([a-z0-9]+\.ufs\.sh|utfs\.io)\/f\/[A-Za-z0-9._-]+$/,
+    'Must be a valid uploadthing URL',
   );

@@ -5,14 +5,19 @@ const nextConfig = {
 
   // Allow Uploadthing images
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'utfs.io',
-        pathname: '/f/**',
-      },
-    ],
-  },
+  remotePatterns: [
+    {
+      protocol: 'https',
+      hostname: 'utfs.io',
+      pathname: '/f/**',
+    },
+    {
+      protocol: 'https',
+      hostname: '*.ufs.sh',
+      pathname: '/f/**',
+    },
+  ],
+},
 
   async headers() {
     return [
@@ -43,7 +48,7 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "img-src 'self' https://utfs.io data: blob:",
+              "img-src 'self' https://utfs.io https://*.ufs.sh data: blob:",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com data:",
               "connect-src 'self' https://*.ingest.uploadthing.com https://uploadthing.com https://fonts.googleapis.com https://api.uploadthing.com",
